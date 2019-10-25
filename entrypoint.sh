@@ -5,7 +5,7 @@ set -eu
 
 echo "starting..."
 
-sshpass -p $PASSWORD scp -r $USERNAME@acsweb.ucsd.edu:/public_html/$REMOTE_DIR $LOCAL_DIR
+sshpass -p $INPUT_PASSWORD scp -r $INPUT_USERNAME@acsweb.ucsd.edu:/public_html/$INPUT_REMOTE_DIR $INPUT_LOCAL_DIR
 
 echo "UCSD Personal Site Deploy complete"
 exit 0
