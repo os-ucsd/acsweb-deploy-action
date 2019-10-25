@@ -16,9 +16,9 @@ inputs:
     description: 'Any folder within `public_html` that you want to sync files to'
     required: false
     default: ""
-  runs:
-    using: 'docker'
-    image: 'Dockerfile'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
   args:
     - ${{ inputs.username }}
     - ${{ inputs.password }}
