@@ -11,11 +11,11 @@ inputs:
   local_dir:
     description: 'The directory of the repository that contains the files you want to deploy'
     required: false
-    default: "./"
+    default: "."
   remote_dir:
     description: 'Any folder within `public_html` that you want to sync files to'
     required: false
-    default: "./"
+    default: "."
 runs:
   using: 'docker'
   image: 'Dockerfile'
