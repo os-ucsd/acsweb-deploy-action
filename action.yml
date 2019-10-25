@@ -1,0 +1,29 @@
+name: 'UCSD Personal Site Deploy'
+author: 'Open Source @ UCSD'
+description: 'Sync your personal website to your acsweb.ucsd.edu site'
+inputs:
+  username:
+    description: 'The UCSD username where the acsweb site is hosted'
+    required: true
+  password:
+    description: 'The password for the UCSD username of the acsweb site'
+    required: true
+  local_dir:
+    description: 'The directory of the repository that contains the files you want to deploy'
+    required: false
+    default: ""
+  remote_dir:
+    description: 'Any folder within `public_html` that you want to sync files to'
+    required: false
+    default: ""
+  runs:
+    using: 'docker'
+    image: 'Dockerfile'
+  args:
+    - ${{ inputs.username }}
+    - ${{ inputs.password }}
+    - ${{ inputs.local_dir }}
+    - ${{ inputs.remote_dir }}
+branding:
+  icon: 'upload-cloud'  
+  color: 'blue'
