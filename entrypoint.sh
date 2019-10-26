@@ -12,7 +12,7 @@ pwd
 echo 1, $INPUT_USERNAME, 2, $INPUT_REMOTE_DIR, 3, $INPUT_LOCAL_DIR
 
 
-sshpass -p $INPUT_PASSWORD scp -o StrictHostKeyChecking=no -r $INPUT_USERNAME@acsweb.ucsd.edu:~/public_html/$INPUT_REMOTE_DIR $INPUT_LOCAL_DIR
+sshpass -p $INPUT_PASSWORD scp -o StrictHostKeyChecking=no -r $INPUT_LOCAL_DIR $INPUT_USERNAME@acsweb.ucsd.edu:~/public_html/$INPUT_REMOTE_DIR
 
 echo "UCSD Personal Site Deploy complete"
 exit 0
