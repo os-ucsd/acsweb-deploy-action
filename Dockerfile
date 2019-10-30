@@ -5,7 +5,7 @@ LABEL repository="https://github.com/os-ucsd/actions"
 LABEL homepage="https://github.com/os-ucsd/actions"
 LABEL maintainer="Alex Garcia <asg017@ucsd.edu>"
 
-LABEL "com.github.actions.name"="UCSD Personal Site Deploy"
+LABEL "com.github.actions.name"="UCSD ACSWeb Site Deploy"
 LABEL "com.github.actions.description"="Sync your personal website to your acsweb.ucsd.edu site"
 LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="blue"
