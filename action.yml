@@ -11,7 +11,7 @@ inputs:
   local_dir:
     description: 'The directory in the repository that contains the files you want to deploy'
     required: false
-    default: ""
+    default: "./"
   remote_dir:
     description: 'Any folder within `public_html` that you want to sync files to'
     required: false
