@@ -1,4 +1,4 @@
-name: 'UCSD ACSWeb Deploy'
+name: 'UCSD ACSWeb Site Deploy'
 author: 'Open Source @ UCSD'
 description: 'Sync your personal or org website to your acsweb.ucsd.edu site!'
 inputs:
