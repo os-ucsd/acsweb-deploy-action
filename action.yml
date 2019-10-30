@@ -1,15 +1,15 @@
-name: 'UCSD Personal Site Deploy'
+name: 'UCSD ACSWeb Deploy'
 author: 'Open Source @ UCSD'
-description: 'Sync your personal website to your acsweb.ucsd.edu site'
+description: 'Sync your personal or org website to your acsweb.ucsd.edu site!'
 inputs:
   username:
-    description: 'The UCSD username where the acsweb site is hosted'
+    description: 'The UCSD username where the acsweb site is hosted (e.g. asg017, os-ucsd, eceusc)'
     required: true
   password:
-    description: 'The password for the UCSD username of the acsweb site'
+    description: 'The password for the UCSD username of the acsweb site. Put this inside a Github Secret!'
     required: true
   local_dir:
-    description: 'The directory of the repository that contains the files you want to deploy'
+    description: 'The directory in the repository that contains the files you want to deploy'
     required: false
     default: ""
   remote_dir:
